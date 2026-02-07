@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Login | Wooden Atlas</title>
+  <title>Checkout | Wooden Atlas</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -25,30 +25,44 @@
 
   <section class="page-hero">
     <div class="container">
-      <p class="badge">Account</p>
-      <h1>Welcome back to Wooden Atlas</h1>
-      <p>Access order history, saved designs, and concierge requests.</p>
+      <p class="badge">Checkout</p>
+      <h1>Securely complete your order</h1>
+      <p>Flexible delivery windows, premium packaging, and insured shipping.</p>
     </div>
   </section>
 
   <section class="section">
     <div class="container split">
       <div class="form-card">
-        <h3>Sign In</h3>
-        <form class="form-grid">
-          <input type="email" placeholder="Email Address" required />
-          <input type="password" placeholder="Password" required />
-          <button class="btn btn-primary" type="button">Sign In</button>
-        </form>
-      </div>
-      <div class="form-card">
-        <h3>Create an Account</h3>
+        <h3>Shipping Details</h3>
         <form class="form-grid">
           <input type="text" placeholder="Full Name" required />
           <input type="email" placeholder="Email Address" required />
-          <input type="password" placeholder="Create Password" required />
-          <button class="btn btn-outline" type="button">Sign Up</button>
+          <input type="text" placeholder="Phone Number" required />
+          <input type="text" placeholder="Street Address" required />
+          <div class="split">
+            <input type="text" placeholder="City" required />
+            <input type="text" placeholder="Postal Code" required />
+          </div>
+          <select>
+            <option>Choose Delivery Window</option>
+            <option>Standard (7-10 days)</option>
+            <option>Priority (4-6 days)</option>
+            <option>White-glove Installation</option>
+          </select>
+          <textarea rows="4" placeholder="Gift note or engraving request"></textarea>
         </form>
+      </div>
+      <div class="form-card">
+        <h3>Order Summary</h3>
+        <p>World Atlas Grand — $720</p>
+        <p>Country Heritage Map — $410</p>
+        <p class="highlight" style="margin-top: 14px;">Total: $1,130</p>
+        <div class="button-group" style="margin-top: 20px;">
+          <button class="btn btn-primary" type="button">Complete Purchase</button>
+          <button class="btn btn-outline" type="button">Save for Later</button>
+        </div>
+        <p style="margin-top: 18px; color: var(--muted);">Payments secured with bank-grade encryption.</p>
       </div>
     </div>
   </section>
